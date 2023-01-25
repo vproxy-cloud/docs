@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">vProxy Cloud 文檔系統</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">vProxy Cloud Docs 在這裡您可以搜索到眾多的 Minecraft 伺服器設定與使用方式與 vProxy Cloud 系統相關操作方式</p>
+      <p class="meta">
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">vProxy Cloud 相關問題</h2>
+          <p>關於 vProxy Cloud 系統操作上問題，包含面板功能介紹、商品介紹、相關條款等，凡只要與 vProxy Cloud 有關問題都能在這裡找到。</p>
+          <a class="btn btn-primary btn-lg px-4 mb-2" href="https://docs.vproxy.cloud/docs/cloud" role="button">進入</a>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Minecraft 伺服器問題</h2>
+          <p>關於 Minecraft 伺服器設定上問題，包含插件、設定、優化等問題可以在此尋找，但這裡僅收錄部分常用的插件與問題，其他問題還需善用其他工具解決。</p>
+          <a class="btn btn-primary btn-lg px-4 mb-2" href="https://docs.vproxy.cloud/docs/server" role="button">進入</a>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">文檔共編問題</h2>
+          <p>想加入我們成為文檔的一分子嗎？這個部分介紹了文檔的撰寫方式、格式與相關問題，讓我們一起建置這裡帶給更多有需要的人協助。</p>
+          <a class="btn btn-primary btn-lg px-4 mb-2" href="https://docs.vproxy.cloud/docs/docs" role="button">進入</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}
