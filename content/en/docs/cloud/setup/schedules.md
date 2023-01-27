@@ -12,10 +12,10 @@ images: []
 ## 操作說明
 
 1. 進入伺服器的「排程管理」（可在上方選單列找到）
-![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup1.png)
+![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup1.png)
 
 2. 點擊「創建排程」
-![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup2.png)
+![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup2.png)
    1. 排程名稱：如字面上意義，建議可以輸入一些方便了解這個排程要做的事情，方便之後有需要時可以一目瞭然
    2. 分、時、天、月、週：代表這個排程什麼時候要執行
    3. 語法介紹：
@@ -51,16 +51,16 @@ images: []
    0 *／9 * * * （代表每天 9 18 時會執行）
 
    在這裡推薦一個可以預覽 Cronjob 執行時間的網站：<https://crontab.guru/>
-   ![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup3.png)
+   ![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup3.png)
    網站上輸入 Cronjob 語法後，它會給予哪個時候會執行的時間，應該能讓不懂的人更加了解
 3. 回到面板點擊剛創建好的排程
-   ![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup4.png)
+   ![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup4.png)
 4. 進入後點擊右邊的新排程
-   ![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup5.png)
+   ![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup5.png)
 5. 進到排程的創建新任務，在此我們就能控制我們要對伺服器進行哪些動作。
-   ![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup6.png)
+   ![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup6.png)
    1. 行動：分為三類發送指令、狀態控制、創建備份
-      ![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup7.png)
+      ![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup7.png)
       1. 發送指令：也就是當時間到時能在控制台輸入哪些指令（一行一個指令，它是發送到控制台記得不用加 /）
       2. 狀態控制：呼叫伺服器要進行開機、關機、重啟、強制關閉的動作
       3. 創建備份：也就是創建備份（前提是有備份的欄位，它會進行本地的備份，不影響到伺服器的儲存空間，如果備份欄位已經滿了，那會直接覆蓋最舊的那一個）
@@ -68,7 +68,7 @@ images: []
 
 ## 實際範例
 
-![](http://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup8.png)
+![](https://image.vproxy.cloud/wp-content/uploads/cloud.schedules_autobackup8.png)
 依照上圖的設置，每小時的 0 分，會依序進行以下動作
 1. 發送通知「伺服器於 10 分鐘後重啟」
 2. 進行備份
