@@ -30,8 +30,8 @@ BungeeGuard 是一個增添 BungeeCord 與 Minecraft 伺服器之間安全的插
 ### 在 BungeeCord 上的安裝方式
 
 1. 下載 BungeeGuard 插件
-2. 將 BungeeGuard 插件上傳到 **BungeeCord（前端）**與　**Minecraft 伺服器（後端）**的 `plugins` 資料夾，並「**重啟**」
-3. 重啟完成後到 **BungeeCord（前端）**的 `plugins/BungeeGuard` 資料夾中的 `token.yml`
+2. 將 BungeeGuard 插件上傳到 **BungeeCord（前端）** 與　**Minecraft 伺服器（後端）** 的 `plugins` 資料夾，並「**重啟**」
+3. 重啟完成後到 **BungeeCord（前端）** 的 `plugins/BungeeGuard` 資料夾中的 `token.yml`
 4. 複製 `token.yml` 中的 `token`
 
 ![token位置](https://image.vproxy.cloud/wp-content/uploads/server.bungeecord.plugins_bungeeguard1.png)
@@ -82,12 +82,12 @@ invalid-token-kick-message: "&cUnable to authenticate."
 ### 安裝方式
 
 1. 下載 BungeeGuard 插件
-2. 將 BungeeGuard 插件上傳到　**Minecraft 伺服器（後端）**的 `plugins` 資料夾，並「**重啟**」
-3. 重啟完成後到 **BungeeCord（前端）**的 `velocity.toml` 找到 `player-info-forwarding-mode` 並將其值改為 `bungeeguard`
+2. 將 BungeeGuard 插件上傳到　**Minecraft 伺服器（後端）** 的 `plugins` 資料夾，並「**重啟**」
+3. 重啟完成後到 **BungeeCord（前端）** 的 `velocity.toml` 找到 `player-info-forwarding-mode` 並將其值改為 `bungeeguard`
 
 ![player-info-forwarding-mode位置](https://image.vproxy.cloud/wp-content/uploads/server.bungeecord.plugins_bungeeguard4.png)
 
-4. 還是回到 **BungeeCord（前端）**的資料夾找到 `forwarding.secret` 並將裡面的值複製
+4. 還是回到 **BungeeCord（前端）** 的資料夾找到 `forwarding.secret` 並將裡面的值複製
 
   ![forwarding.secret](https://image.vproxy.cloud/wp-content/uploads/server.bungeecord.plugins_bungeeguard5.png)
 
