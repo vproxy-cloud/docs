@@ -1,6 +1,6 @@
 ---
-title: "BungeeCord"
-description: ""
+title: "BungeeCord 安裝與設置方式"
+description: "BungeeCord 是一款可以讓玩家連線一組 IP 就能進到很多伺服器的代理軟體，也就是很常說的分流就是透過此完成的，讓我用簡單的圖文來教你吧！"
 date: 2023-01-25T11:27:47+08:00
 lastmod: 2023-01-25T11:27:47+08:00
 draft: false
@@ -140,7 +140,7 @@ servers:
 
 > 整個設定完成並架設後，請不要將後端的連線位置公開，雖然普通玩家無法直接連線，但是有意人士可以透過某些方式連線並獲得伺服器內部的管理權限，為了避免這些行為可以安裝像是 BungeeGuard 的插件，增加一些安全。
 
-BungeeGuard 的設置方法：<https://docs.vproxy.cloud/docs/server/bungee-plugins/bungeeguard/>
+BungeeGuard 的設置方法：<https://docs.vproxy.cloud/docs/server/bungeecord/plugins/bungeeguard/>
 
 BungeeCord config.yml 設定文檔：<https://docs.vproxy.cloud/docs/server/bungeecord/config/>
 
