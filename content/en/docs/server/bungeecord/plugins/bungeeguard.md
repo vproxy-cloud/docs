@@ -83,11 +83,11 @@ invalid-token-kick-message: "&cUnable to authenticate."
 
 1. 下載 BungeeGuard 插件
 2. 將 BungeeGuard 插件上傳到　**Minecraft 伺服器（後端）** 的 `plugins` 資料夾，並「**重啟**」
-3. 重啟完成後到 **BungeeCord（前端）** 的 `velocity.toml` 找到 `player-info-forwarding-mode` 並將其值改為 `bungeeguard`
+3. 重啟完成後到 **Velocity（前端）** 的 `velocity.toml` 找到 `player-info-forwarding-mode` 並將其值改為 `bungeeguard` 並「**重啟**」
 
 ![player-info-forwarding-mode位置](https://image.vproxy.cloud/wp-content/uploads/server.bungeecord.plugins_bungeeguard4.png)
 
-4. 還是回到 **BungeeCord（前端）** 的資料夾找到 `forwarding.secret` 並將裡面的值複製
+4. 重啟完成後回到 **Velocity（前端）** 的資料夾找到 `forwarding.secret` 並將裡面的值複製
 
   ![forwarding.secret](https://image.vproxy.cloud/wp-content/uploads/server.bungeecord.plugins_bungeeguard5.png)
 
