@@ -1,6 +1,6 @@
 ---
 title : "BungeeGuard"
-description: ""
+description: "BungeeGuard 藉指在提高原版 BungeeCord 的安全性，防範 UUID-Spoof 的駭客攻擊手法。"
 lead: ""
 date: 2020-10-06T08:48:23+00:00
 lastmod: 2020-10-06T08:48:23+00:00

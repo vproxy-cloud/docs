@@ -88,5 +88,7 @@ remote:
     use-proxy-protocol: false
 ```
 6. （**如果並未使用 floodgate 跳過此步驟**）將一開始所下載的 `key.pem` 上傳到 GeyserMC 主機上，與核心放在一起
+
 ![key.pem 上傳](https://image.vproxy.cloud/wp-content/uploads/cloud.setup_geyser-standalone7.png)
-7. 設定完成後儲存並「**重啟**」就完成，現在基岩版玩家可以使用　UDP 主機的 IP 登入了
+
+7. 設定完成後儲存並「**重啟**」就完成，現在基岩版玩家可以使用 UDP 主機的 IP 登入了
