@@ -29,8 +29,8 @@
   url = "/tutorial/lorem/"
 
 [[main]]
-  name = "vProxy Cloud"
-  url = "/docs/cloud/"
+  name = "基礎設置"
+  url = "/docs/setup/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -40,8 +40,8 @@
 #   weight = 15
 
 [[main]]
-  name = "Minecraft"
-  url = "/docs/server/"
+  name = "面板使用"
+  url = "/docs/panel/"
   weight = 20
 
 [[main]]
