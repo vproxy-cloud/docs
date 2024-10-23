@@ -5,12 +5,16 @@ const withMDX = createMDX();
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
-  output: 'export',  // 為了靜態匯出添加此行
-  basePath: process.env.NODE_ENV === 'production' ? '/docs' : '',  // 替換成您的 GitHub 儲存庫名稱
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/docs' : '',  // 替換 'docs' 為您的儲存庫名稱
   images: {
     unoptimized: true
+  },
+  // 添加這個設定
+  experimental: {
+    appDir: true,
+    allowedRevalidateHeaderKeys: []
   }
-  
 };
 
 export default withMDX(config);
