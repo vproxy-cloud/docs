@@ -6,7 +6,7 @@ const withMDX = createMDX();
 const config = {
   reactStrictMode: true,
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/docs' : '',  // 替換 'docs' 為您的儲存庫名稱
+  basePath: process.env.NODE_ENV === 'production' ? '/' : '',  // 替換 'docs' 為您的儲存庫名稱
   images: {
     unoptimized: true
   },
