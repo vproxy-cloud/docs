@@ -1,7 +1,11 @@
-import { NextResponse } from 'next/server';
+import { getPages } from '@/app/source';
+import { createSearchAPI } from 'fumadocs-core/search/server';
 
-export const dynamic = 'force-static';
-
-export async function GET() {
-  return NextResponse.json({ message: 'Search disabled' }, { status: 404 });
-}
+export const { GET } = createSearchAPI('advanced', {
+  indexes: getPages().map((page) => ({
+    title: page.data.title,
+    structuredData: page.data.exports.structuredData,
+    id: page.url,
+    url: page.url,
+  })),
+});
