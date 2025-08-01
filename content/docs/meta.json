@@ -12,6 +12,8 @@
         "---控制面板---",
         "panel/server",
         "panel/account",
-        "panel/password"
+        "panel/password",
+        "---障礙排除---",
+        "troubleshooting/tracert"
     ]
   }
