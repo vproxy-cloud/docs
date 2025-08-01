@@ -1,0 +1,63 @@
+---
+title: AI 協助解決伺服器問題
+description: 學習如何使用 AI 工具（如 ChatGPT）來協助診斷和解決伺服器相關問題。
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+
+AI 工具如 ChatGPT 可以協助您快速診斷和解決各種技術問題。正確使用 AI 可以大幅提升問題解決的效率，特別是在遇到複雜的伺服器設定或錯誤訊息時。
+
+至撰寫此文檔時，[ChatGPT](https://chat.openai.com/) 與 [Gemini](https://gemini.google.com/app) 兩個可以提供免費 AI 工具提供一定能力的技術支援。這些工具能夠理解您的問題並提供解決方案。
+
+本篇以 ChatGPT 為例，介紹如何使用 AI 協助解決伺服器問題。
+
+<Steps>
+<Step>
+### 註冊 ChatGPT 帳戶
+前往 [ChatGPT 官網](https://chat.openai.com/) 註冊或登入帳戶，並進入對話介面。
+![chatgpt1](/images/troubleshooting/ai/1.png)
+</Step>
+
+<Step>
+### 要求繁體中文支援
+在對話中輸入以下指令，讓 AI 使用繁體中文回答問題：
+```
+請使用繁體中文回答我的問題
+```
+![chatgpt2](/images/troubleshooting/ai/2.png)
+</Step>
+
+<Step>
+### 描述您的問題
+將伺服器控制台的錯誤完整進行複製貼上，並可加上一些問題描述，例如：「分析我的 Minecraft 伺服器錯誤」
+
+```
+分析我的 Minecraft 伺服器錯誤：
+container@pterodactyl~ Server marked as offline...
+[Pterodactyl Daemon]: Checking server disk space usage, this could take a few seconds...
+[Pterodactyl Daemon]: Updating process configuration files...
+[Pterodactyl Daemon]: Ensuring file permissions are set correctly, this could take a few seconds...
+container@pterodactyl~ Server marked as starting...
+[Pterodactyl Daemon]: Pulling Docker container image, this could take a few minutes to complete...
+Pulling from pterodactyl/yolks 
+Status: Image is up to date for ghcr.io/pterodactyl/yolks:java_21 
+Digest: sha256:3bc71616eb53a7f13bd12ff45521c4c32d2cae008a0c072020953522970b9f31 
+[Pterodactyl Daemon]: Finished pulling Docker container image
+container@pterodactyl~ java -version
+openjdk version "21.0.7" 2025-04-15 LTS
+OpenJDK Runtime Environment Temurin-21.0.7+6 (build 21.0.7+6-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.7+6 (build 21.0.7+6-LTS, mixed mode, sharing)
+container@pterodactyl~ java -Xms128M -Xmx16384M --add-modules=jdk.incubator.vector -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar
+Error: Unable to access jarfile server.jar
+container@pterodactyl~ Server marked as offline...
+```
+![chatgpt3](/images/troubleshooting/ai/3.png)
+</Step>
+
+<Step>
+### 了解 AI 回答
+AI 會分析錯誤訊息並提供可能的解決方案或總結。您將可以依照 AI 的建議進行操作。
+![chatgpt4](/images/troubleshooting/ai/4.png)
+</Step>
+</Steps>
