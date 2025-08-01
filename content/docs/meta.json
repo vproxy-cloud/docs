@@ -14,6 +14,7 @@
         "panel/account",
         "panel/password",
         "---障礙排除---",
-        "troubleshooting/tracert"
+        "troubleshooting/tracert",
+        "troubleshooting/ai"
     ]
   }
