@@ -13,6 +13,8 @@
         "panel/server",
         "panel/account",
         "panel/password",
+        "---Minecraft---",
+        "minecraft/domain",
         "---障礙排除---",
         "troubleshooting/tracert",
         "troubleshooting/ai"

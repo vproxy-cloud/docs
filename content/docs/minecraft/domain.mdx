@@ -1,0 +1,70 @@
+---
+title: 使用自訂域名連接伺服器
+description: 透過 Cloudflare SRV 記錄設定，讓玩家使用您的自訂域名連接 Minecraft 伺服器。
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+
+透過設定 Cloudflare 的 SRV 記錄，您可以讓玩家使用像 `play.yourdomain.com` 這樣的自訂域名來連接伺服器，而不需要記住複雜的 IP 位址和端口號碼。
+
+<Callout title="基岩板無法使用 SRV 紀錄" type="warn">
+    目前 Minecraft 基岩版（Bedrock Edition）不支援 SRV 記錄，玩家仍需使用 IP 位址和端口號碼連接伺服器。或是使用 A 紀錄設定子域名指向伺服器 IP 位址。
+</Callout>
+
+<Steps>
+<Step>
+### 查看伺服器詳細資訊
+進入 vProxy Cloud 控制面板，在伺服器控制台找到「連線位置」並記起或複製。
+![domain1](/images/minecraft/domain/1.png)
+</Step>
+</Steps>
+
+## 在 Cloudflare 設定 SRV 記錄
+
+<Steps>
+<Step>
+### 登入 Cloudflare 控制台
+前往 [Cloudflare Dashboard](https://dash.cloudflare.com) 並選擇您的域名。
+</Step>
+
+<Step>
+### 進入 DNS 設定
+在左側選單中點選「**DNS**」，然後點擊「**記錄**」分頁。
+</Step>
+
+<Step>
+### 新增 SRV 記錄
+點擊「**新增記錄**」按鈕，然後從下拉選單中選擇「**SRV**」。
+![domain2](/images/minecraft/domain/2.png)
+</Step>
+
+<Step>
+### 填寫 SRV 記錄詳細資訊
+根據以下資訊填寫各個欄位：
+
+1. **名稱**：輸入 `_minecraft._tcp.<您要取的子域名>`
+2. **優先順序**：輸入 `0`
+3. **權重**：輸入 `0`
+4. **連接埠**：輸入您的伺服器端口（例如：`25566`）
+5. **目標**：輸入您的伺服器位址（例如：`edge1.vproxy.hk`）
+
+<Callout type="warn">
+    名稱必須以 `_minecraft._tcp.` 開頭，然後是您想要的子域名（例如：`_minecraft._tcp.play`）。
+    這樣玩家就可以使用 `play.你的域名` 來連接伺服器。像是 `play.hostga.me`。
+
+    如果留空 `_minecraft._tcp`，則是使用頂級域名進行連線。像是本次設定域名是 hostga.me 那麼玩家可以直接使用 `hostga.me` 來連線。
+</Callout>
+
+![domain3](/images/minecraft/domain/3.png)
+</Step>
+
+<Step>
+### 儲存設定
+確認所有資訊正確後，點擊「**儲存**」按鈕。
+</Step>
+</Steps>
+
+<Callout type="info">
+    DNS 記錄通常需要幾分鐘到幾小時才會完全生效。Cloudflare 的更新通常較快，大約 2-5 分鐘，即可連線測試。
+</Callout>
