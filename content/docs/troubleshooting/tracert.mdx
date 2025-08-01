@@ -1,0 +1,53 @@
+---
+title: Windows Tracert 路由追蹤
+description: 使用 Windows 內建的 tracert 指令進行網路路由追蹤，讓技術人員了解網路連線狀況，診斷問題。
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Tracert（Trace Route）是一個 Windows 內建的命令行工具，用於追蹤網路路由。
+
+<Callout type="warning">
+如有網路連線問題，需要請您提供 `IP 位置` 與 `Tracert 截圖` 結果，開啟[客服單](https://discord.vproxy.cloud)給我們的技術人員，以便進行問題診斷。
+</Callout>
+
+## 如何取得 IP 位置
+<Steps>
+<Step>
+### 取得玩家自己 IP 位置
+您可以透過 [ip-api.com](https://ip-api.com/) 來查詢
+將下圖框選的 IP 位置複製提供給我們的技術人員。
+![tracert4](/images/troubleshooting/tracert/4.png)
+</Step>
+</Steps>
+
+## 如何使用 Tracert
+
+<Steps>
+<Step>
+### 開啟命令提示字元
+按下 `Win + R` 鍵，輸入 `cmd` 並按 Enter，或是：
+在開始選單搜尋「**命令提示字元**」或「**cmd**」
+![tracert1](/images/troubleshooting/tracert/1.png)
+</Step>
+
+<Step>
+### 執行 Tracert 指令
+在命令提示字元中輸入：
+```cmd
+tracert [伺服器 IP]
+```
+<Callout type="info">
+伺服器連線位置如果是 `edge1.vproxy.hk:25566`，只要輸入 `edge1.vproxy.hk` 即可，將後方的端口移除。
+![tracert2](/images/troubleshooting/tracert/2.png)
+</Callout>
+</Step>
+
+<Step>
+### 等待追蹤完成
+追蹤完成，會顯示「**追蹤完成**」。
+![tracert3](/images/troubleshooting/tracert/3.png)
+請將**此結果截圖**與 **IP 位置**提供給我們的技術人員。
+</Step>
+</Steps>
